@@ -10,7 +10,7 @@ let headerTitle=document.getElementById("header-title");
 // headerTitle.innerText="Goodbye";
 // headerTitle.innerHTML="<h3>Hello</h3>"
 
-console.log(headerTitle);
+//console.log(headerTitle);
 let header=document.getElementById("main-header");
 
 // headerTitle.style.borderBottom="solid red";
@@ -30,8 +30,12 @@ for(let i=0;i<items.length;i++){
     if(i===1){
         continue;
     }
+    else if(i===2){
+        items[i].style.backgroundColor="green";
+    }
     else{
         items[i].style.backgroundColor="grey";
     }
+    items[i].style.fontWeight="bold";
 }
 
