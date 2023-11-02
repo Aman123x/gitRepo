@@ -19,23 +19,44 @@ header.style.borderBottom="solid 3px black";
 
 // Get Elements By Class Name
 
-var items=document.getElementsByClassName("list-group-item");
-console.log(items);
-console.log(items[1]);
-items[1].textContent="hello 2";
-items[1].style.fontWeight="bold";
-items[1].style.backgroundColor="yellow";
+// var items=document.getElementsByClassName("list-group-item");
+// console.log(items);
+// console.log(items[1]);
+// items[1].textContent="hello 2";
+// items[1].style.fontWeight="bold";
+// items[1].style.backgroundColor="yellow";
 
-for(let i=0;i<items.length;i++){
+// for(let i=0;i<items.length;i++){
+//     if(i===1){
+//         continue;
+//     }
+//     else if(i===2){
+//         items[i].style.backgroundColor="green";
+//     }
+//     else{
+//         items[i].style.backgroundColor="grey";
+//     }
+//     items[i].style.fontWeight="bold";
+// }
+
+// Get Elements By TagName
+
+var li=document.getElementsByTagName("li");
+console.log(li);
+console.log(li[1]);
+li[1].textContent="hello 2";
+li[1].style.fontWeight="bold";
+li[1].style.backgroundColor="yellow";
+
+for(let i=0;i<li.length;i++){
     if(i===1){
         continue;
     }
     else if(i===2){
-        items[i].style.backgroundColor="green";
+        li[i].style.backgroundColor="green";
     }
     else{
-        items[i].style.backgroundColor="grey";
+        li[i].style.backgroundColor="grey";
     }
-    items[i].style.fontWeight="bold";
+    li[i].style.fontWeight="bold";
 }
-
